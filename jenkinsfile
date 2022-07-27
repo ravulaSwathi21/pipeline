@@ -1,6 +1,7 @@
 pipeline {
     agent any 
     stages {
+               archiveArtifacts artifacts: 'jenkinsfile', followSymlinks: false
         stage('Build') { 
             steps {
             }
@@ -11,6 +12,6 @@ pipeline {
         stage('Deploy') { 
             steps {
             }
-         }
-    }
+            }
+            }
            
